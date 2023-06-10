@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        function fadeIn(n) {
+            var cls = "." + n;
+            document.querySelector(cls).style.opacity = 0.7;
+        }
+
+        function fadeOut(n) {
+            var cls = "." + n;
+            document.querySelector(cls).style.opacity = 0;
+        }
+
+    </script>
+    <link href="styles.css" rel="stylesheet">
+    <title>
+        Kongkham Luangkhot
+    </title>
+</head>
+
+<body>
+    <div class="contain-fluid"></div>
+    <div class="container-top">
+        <div>
+            <a class="logo-top" href="index.html">kl.</a>
+        </div>
+        <div class="containerSubtop" id="hide-index-720">
+            <a href="coding.html" class="interestS">Coding</a>
+            <a href="arch.html" class="interestS">Architecture</a>
+            <a href="photo.html" class="interestS">Photography</a>
+            <a href="enjoy.html" class="interestS">Routine</a>
+        </div>
+    </div>
+    <div class="back-pic">
+        <div class="pic"></div>
+        <div class="cod" style="opacity:0"></div>
+        <div class="arch" style="opacity:0"></div>
+        <div class="pho" style="opacity:0"></div>
+        <div class="enj" style="opacity:0"></div>
+    </div>
+    <div class="container-top">
+        <div class="container-left">
+            <h6>INTRO</h6>
+            <h1>Hi, I'm Kongkham Luangkhot.
+                <br>I love coding and design.
+            </h1>
+            <div class="link-block">
+                <div class="logo-arrow"></div>
+                <a class="aboutMe" href="aboutMe.html">About Me</a>
+            </div>
+            <div class="connect">
+                <h6 class="connect">CONNECT</h6>
+                <div class="link-social">
+                    <a class="social-block" href="https://www.instagram.com/jian.lk/">
+                        <img class="ig" src="https://www.svgrepo.com/show/447413/instagram.svg">
+                    </a>
+                    <a class="social-block" href="https://www.linkedin.com/in/kongkham-luangkhot/">
+                        in
+                    </a>
+                    <a class="social-block" href="https://github.com/kongkham-lk">
+                        git
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-right">
+            <h6>MY INTEREST</h6>
+            <div class="interest-d">
+                <a href="coding.html" class="interest" onmouseover="fadeIn('cod')"
+                    onmouseout="fadeOut('cod')">Coding</a>
+                <a href="arch.html" class="interest" onmouseover="fadeIn('arch')"
+                    onmouseout="fadeOut('arch')">Architecture</a>
+                <a href="photo.html" class="interest" onmouseover="fadeIn('pho')"
+                    onmouseout="fadeOut('pho')">Photography</a>
+                <a href="enjoy.html" class="interest" onmouseover="fadeIn('enj')"
+                    onmouseout="fadeOut('enj')">Routine</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
